@@ -1,0 +1,13 @@
+.indexWrapper {
+  display: flex;
+}
+
+  .sideBar {
+    height: 100vh;
+    width: 300px;
+  }
+
+  .mainChat {
+    height: 100vh;
+    width: calc(100vw - 300px);
+  }

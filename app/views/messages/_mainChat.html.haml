@@ -1,0 +1,32 @@
+.mainChat
+
+  .groupInfo
+    .groupInfo__infoBox
+      %p.groupInfo__groupName Test_Group_1
+      %p.groupInfo__member Member: kodai_fujita, hogehoge
+    .groupInfo__editBox
+      = link_to "#", class:"groupInfo__editBtn" do
+        Edit
+
+  .messageList
+    .messageList__topMargin
+    .messageList__commentBox
+      .messageList__infoBox
+        %p.messageList__name hogehoge
+        %p.messageList__dateAndTime 2020/01/01(Wed) 00:00:00
+      %p.messageList__message Ruby on Rails
+    .messageList__commentBox
+      .messageList__infoBox
+        %p.messageList__name kodai_fujita
+        %p.messageList__dateAndTime 2020/01/01(Wed) 00:00:00
+      %p.messageList__message Hello world!!
+
+  .messageForm
+    %form.messageForm__form
+      .messageForm__postBox
+        %input{type: "text", class: "messageForm__text", placeholder: "type a message"}
+        %label{class: "messageForm__imageIcon"}
+          %i.far.fa-image
+          %input{type: "file", class: "messageForm__file"}
+      %input{type: "submit", value: "Send", class: "messageForm__submitBtn"}
+
