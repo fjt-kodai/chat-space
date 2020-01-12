@@ -1,0 +1,43 @@
+.messageList {
+  background-color: $color-white_messageList;
+  height: calc(100vh - 100px - 90px);
+  width: calc(100vw - 300px);
+  padding-left: 40px;
+
+  &__topMargin {
+    height: 35px;
+  }
+
+  &__commentBox {
+    height: 88px;
+  }
+
+    &__infoBox {
+      height: 16px;
+      display: flex;
+      margin-bottom: 12px;
+    }
+
+      &__name {
+        color: $color-black;
+        font-size: 16px;
+        line-height: 16px;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+
+      &__dateAndTime {
+        color: $color-grey;
+        font-size: 12px;
+        line-height: 16px;
+        white-space: nowrap;
+      }
+
+    &__message {
+      height: 14px;
+      color: $color-black_messageList;
+      font-size: 14px;
+      line-height: 14px;
+      white-space: nowrap;
+    }
+}
