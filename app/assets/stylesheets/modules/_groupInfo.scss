@@ -1,0 +1,46 @@
+.groupInfo {
+  background-color: $color-white;
+  height: 100px;
+  width: calc(100vw - 300px);
+  border-bottom: solid 1px #eeeeee;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+
+  &__infoBox {
+    padding: 35px 15px 0 0;
+  }
+
+    &__groupName {
+      height: 20px;
+      color: $color-black;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 15px;
+      white-space: nowrap;
+    }
+
+    &__member {
+      height: 12px;
+      color: $color-grey;
+      font-size: 12px;
+      line-height: 12px;
+      white-space: nowrap;
+    }
+
+  &__editBox {
+    min-width: 72px;
+    padding-top: 28px;
+  }
+
+    &__editBtn {
+      display: block;
+      height: 40px;
+      border: solid 1px $color-lightblue;
+      color: $color-lightblue;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+    }
+}

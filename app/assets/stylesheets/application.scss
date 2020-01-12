@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+@import "font-awesome-sprockets";
+@import "./font-awesome";
+@import "./reset";
+@import "./config/variable";
+@import "./index";
+@import "./modules/userInfo";
+@import "./modules/groupList";
+@import "./modules/groupInfo";
+@import "./modules/messageList";
+@import "./modules/messageForm";
