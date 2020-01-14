@@ -1,0 +1,18 @@
+.sideBar
+
+  .userInfo
+    .userInfo__nameBox
+      %p.userInfo__name
+        = current_user.name
+      .userInfo__iconBox
+        = link_to new_group_path, class:"userInfo__icon" do
+          %i.fas.fa-edit
+        = link_to edit_user_path(current_user), class:"userInfo__icon" do
+          %i.fas.fa-cog
+
+  .groupList
+    - current_user.groups.each do |group|
+      .groupList__group
+        = link_to "#", class:"groupList__groupName" do
+          = group.name
+        %p.groupList__latestComment まだメッセージがありません
