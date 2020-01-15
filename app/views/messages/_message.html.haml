@@ -1,0 +1,11 @@
+.messageList__messageBox
+  .messageList__infoBox
+    %p.messageList__name 
+      = message.user.name
+    %p.messageList__dateAndTime
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .messageList__bodyBox
+    - if message.body.present?
+      %p.messageList__message
+        = message.body
+    = image_tag message.image.url, class: "messageList__image" if message.image.present?

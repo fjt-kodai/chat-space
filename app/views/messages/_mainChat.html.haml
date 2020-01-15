@@ -1,0 +1,26 @@
+.mainChat
+
+  .groupInfo
+    .groupInfo__infoBox
+      %p.groupInfo__groupName
+        = @group.name
+      .groupInfo__memberBox
+        %p.groupInfo__member Member:
+        - @group.users.each do |user|
+          = user.name
+    .groupInfo__editBox
+      = link_to edit_group_path(@group), class:"groupInfo__editBtn" do
+        Edit
+
+  .messageList
+    .messageList__topMargin
+    = render @messages
+
+  .messageForm
+    = form_for [@group, @message], html:{class: "messageForm__form"} do |f|
+      .messageForm__postBox
+        = f.text_field :body, class: "messageForm__text", placeholder: "type a message"
+        = f.label :image, class: "messageForm__imageIcon" do
+          %i.far.fa-image
+          = f.file_field :image, class: "messageForm__file"
+      = f.submit "Send", class: "messageForm__submitBtn"

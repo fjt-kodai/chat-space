@@ -20,12 +20,17 @@
       white-space: nowrap;
     }
 
-    &__member {
+    &__memberBox {
       height: 12px;
       color: $color-grey;
       font-size: 12px;
       line-height: 12px;
       white-space: nowrap;
+      display: flex;
+    }
+
+    &__member {
+      margin-right: 5px;
     }
 
   &__editBox {
