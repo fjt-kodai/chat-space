@@ -3,13 +3,10 @@
   height: calc(100vh - 100px - 90px);
   width: calc(100vw - 300px);
   padding-left: 40px;
-
+  overflow: scroll;
+  
   &__topMargin {
     height: 35px;
-  }
-
-  &__commentBox {
-    height: 88px;
   }
 
     &__infoBox {
@@ -33,11 +30,19 @@
         white-space: nowrap;
       }
 
-    &__message {
-      height: 14px;
-      color: $color-black_messageList;
-      font-size: 14px;
-      line-height: 14px;
-      white-space: nowrap;
+    &__bodyBox {
+      margin-bottom: 46px;
     }
+
+      &__message {
+        height: 14px;
+        color: $color-black_messageList;
+        font-size: 14px;
+        line-height: 14px;
+        white-space: nowrap;
+      }
+
+      &__image {
+        margin-top: 12px;
+      }
 }

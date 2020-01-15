@@ -2,21 +2,26 @@
   background-color: $color-navy_groupList;
   height: calc(100vh - 100px);
   width: 300px;
+  overflow: scroll;
 
   &__group {
     height: 91px;
     padding: 20px 20px 40px;
   }
 
-    &__groupName {
+    &__infoBox {
       display: block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    &__groupName {
       height: 15px;
       color: $color-white;
       line-height: 15px;
       font-size: 15px;
       font-weight: bold;
-      text-decoration: none;
-      margin-bottom: 5px;
+      margin-bottom: 10px; //カリキュラムでは5px
     }
 
     &__latestComment {

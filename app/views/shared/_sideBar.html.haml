@@ -13,6 +13,8 @@
   .groupList
     - current_user.groups.each do |group|
       .groupList__group
-        = link_to "#", class:"groupList__groupName" do
-          = group.name
-        %p.groupList__latestComment まだメッセージがありません
+        = link_to group_messages_path(group), class:"groupList__infoBox" do
+          %p.groupList__groupName
+            = group.name
+          %p.groupList__latestComment
+            = group.show_latest_message
