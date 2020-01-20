@@ -5,6 +5,10 @@
   padding-left: 40px;
   overflow: scroll;
   
+  &::-webkit-scrollbar {
+    display:none;
+  }
+
   &__topMargin {
     height: 35px;
   }
